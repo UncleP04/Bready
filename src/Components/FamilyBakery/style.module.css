@@ -7,7 +7,6 @@
   --Color: #25be5b;
   --Background: #32814e;
   --Paragraph: #aec4b6;
-
 }
 
 * {
@@ -29,6 +28,7 @@
   height: 100%;
   padding: 20px;
   position: sticky !important;
+  position: -webkit-sticky;
   top: 0 !important;
 }
 
@@ -52,7 +52,7 @@
   font-family: var(--Header);
 }
 
-.familyBox .topFamily span p{
+.familyBox .topFamily span p {
   font-size: 20px;
   font-family: var(--Text);
   padding: 15px 0;
@@ -70,8 +70,8 @@
     align-self: flex-start;
     text-align: start;
   }
-  
-  .familyBox .topFamily span p{
+
+  .familyBox .topFamily span p {
     font-size: 18px;
     align-self: flex-start;
     text-align: start;

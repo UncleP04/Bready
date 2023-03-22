@@ -21,11 +21,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: grid;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    position: sticky !important;
-    top: 0 !important;
+    position: sticky;
+    top: 0;
 }
 
 .introContent{

@@ -3,6 +3,8 @@ import BakeryItems from '../../Components/BakeryItems';
 import Family from '../../Components/FamilyBakery';
 import FamilySelection from '../../Components/FamilySelection';
 import Introduction from '../../Components/Introduction';
+import OrganicBread from '../../Components/OrganicBread';
+import StoryRender from '../../Components/StoryRender';
 
 const HomePage = () => {
     return(
@@ -11,6 +13,8 @@ const HomePage = () => {
             <Family />
             <FamilySelection />
             <BakeryItems />
+            <OrganicBread />
+            <StoryRender />
         </div>
     )
 }

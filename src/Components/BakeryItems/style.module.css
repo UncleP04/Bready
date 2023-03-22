@@ -6,7 +6,7 @@
   --Header: "Alkatra", cursive;
   --Color: #25be5b;
   --Background: #32814e;
-  --Paragraph: #aec4b6;
+  --Paragraph: #eff3f0;
 }
 
 * {
@@ -26,13 +26,13 @@
 .bakeryItems {
   width: 100%;
   height: 100%;
-  padding: 20px;
   position: sticky !important;
   top: 0 !important;
 }
 
 .bakeryItems .topFamily {
   height: 60vh;
+  background: var(--Background);
   width: 100%;
   display: grid;
   justify-content: center;
@@ -42,29 +42,41 @@
 .bakeryItems .topFamily span {
   text-align: center;
   width: 100%;
+  position: relative;
 }
 
 .bakeryItems .topFamily span h2 {
   font-size: 3em;
   text-transform: capitalize;
-  color: var(--Background);
+  color: white;
   font-family: var(--Header);
 }
 
-.bakeryItems .topFamily span p{
+
+
+.bakeryItems .topFamily span strong{
+  padding:60px;
+  background: var(--Background);
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  right: 142px;
+}
+
+.bakeryItems .topFamily span p {
   font-size: 20px;
   font-family: var(--Text);
   padding: 15px 0;
+  color: var(--Paragraph);
 }
 
-
-.bakeryItems .bottomFamily{
+.bakeryItems .bottomFamily {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 20px;
 }
 
-.bakeryItems .bottomFamily .bakeryGrid{
+.bakeryItems .bottomFamily .bakeryGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
@@ -72,18 +84,21 @@
   gap: 30px;
 }
 
-
 @media only screen and (max-width: 768px) {
-  .bakeryItems .bottomFamily .bakeryGrid{
+  .bakeryItems .bottomFamily .bakeryGrid {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: start;
     align-items: center;
   }
-  .bakeryItems .bottomFamily{
+  .bakeryItems .bottomFamily {
     width: 100%;
     height: 100%;
     padding: 0;
+  }
+
+  .bakeryItems .topFamily{
+    padding: 20px;
   }
 
   .bakeryItems .topFamily span h2 {
@@ -91,8 +106,8 @@
     align-self: flex-start;
     text-align: start;
   }
-  
-  .bakeryItems .topFamily span p{
+
+  .bakeryItems .topFamily span p {
     font-size: 18px;
     align-self: flex-start;
     text-align: start;
@@ -100,14 +115,14 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-  .bakeryItems .bottomFamily .bakeryGrid{
+  .bakeryItems .bottomFamily .bakeryGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
   }
 
-  .bakeryItems .bottomFamily{
+  .bakeryItems .bottomFamily {
     width: 100%;
     height: 100%;
     padding: 0;

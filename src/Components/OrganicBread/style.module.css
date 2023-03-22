@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+
+:root {
+  --Text: "Roboto", sans-serif;
+  --Header: "Alkatra", cursive;
+  --Color: #25be5b;
+  --Background: #32814e;
+  --Paragraph: #aec4b6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.organicBox {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#000000c9, #010804d8),
+    url(../../Image/organic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.organicBox .organicContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.organicBox .organicContent .topOrganic{
+    text-align: center;
+}
+
+.organicBox .organicContent .topOrganic h2{
+    color: var(--Background);
+    text-transform: capitalize;
+    font-family: var(--Header);
+    font-size: 3em;
+}
+
+.organicBox .organicContent .topOrganic p{
+    color: var(--Paragraph);
+    text-transform: capitalize;
+    font-family: var(--Text);
+    font-size: 22px;
+}
+
+.organicBox .organicContent .bottomOrganic{
+   margin-top: 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.organicBox .organicContent .bottomOrganic a{
+   color: white;
+   padding: 10px 30px;
+   border-radius: 20px;
+   text-decoration: none;
+   background: var(--Background);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ @media only screen and (max-width: 768px) {
+    .organicBox{
+        height: 90vh;
+    }
+
+    .organicBox .organicContent .topOrganic{
+      text-align: start;
+      padding: 20px;
+    }
+
+    .organicBox .organicContent .bottomOrganic{
+        flex-direction: column;
+    }
+
+    .organicBox .organicContent .bottomOrganic a{
+        margin: 10px 0;
+        width: 70%;
+        border-radius: 10px;
+    }
+
+    .organicBox .organicContent .topOrganic h2{
+        font-size: 2em;
+    }
+
+    .organicBox .organicContent .topOrganic p{
+        font-size: 20px;
+    }
+ }
