@@ -22,6 +22,65 @@
     background-size: cover;
     background-position: center;
     display: grid;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    position: sticky !important;
+    top: 0 !important;
+}
+
+.introContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    z-index: 1;
+    overflow: hidden !important;
+}
+
+.introContainer .introContent h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--Header);
+    font-size: 4em;
+    margin: 0 0 -20px 0;
+}
+
+.introContainer .introContent p{
+    color: #bfd3c6;
+    font-family: var(--Text);
+    font-size: 15px;
+    text-align: start;
+    width: 400px;
+    padding: 10px 0;
+}
+
+.introContainer .introContent a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    border: 1px solid var(--Color);
+    text-transform: uppercase;
+}
+
+.introContainer span{
+    padding: 300px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid var(--Color);
+    left: 50px;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .introContainer .introContent p{
+        width: 100%;
+    }
+
+    .introContainer span{
+        display: none;
+    }
 }
