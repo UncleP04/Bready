@@ -44,10 +44,23 @@
     font-size: 20px;
 }
 
-.storyCard .contentBox a{
-    color: #25be5b;
+.storyCard .contentBox button{
+    background: transparent;
     padding: 10px 30px;
     margin-top: 20px;
     text-decoration: none;
     border: 1px solid #32814e;
+}
+
+.storyCard .contentBox button:hover{
+    background: var(--Background);
+}
+
+.storyCard .contentBox button:hover a{
+   color: white;
+}
+
+.storyCard .contentBox button a{
+    color: #25be5b;
+   text-decoration: none;
 }

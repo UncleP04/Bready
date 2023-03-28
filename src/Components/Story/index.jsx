@@ -12,7 +12,9 @@ const Story = (props) => {
           <span className={style.contentBox}>
             <h3>{props.Header}</h3>
             <p>{props.Paragraph}</p>
-            <a href="#learn">Learn More</a>
+           <button>
+              <a href="#learn">Learn More</a>
+           </button>
           </span>
         </div>
       </div>

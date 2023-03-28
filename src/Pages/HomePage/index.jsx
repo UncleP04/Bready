@@ -5,6 +5,7 @@ import FamilySelection from '../../Components/FamilySelection';
 import Introduction from '../../Components/Introduction';
 import OrganicBread from '../../Components/OrganicBread';
 import StoryRender from '../../Components/StoryRender';
+import BreadGrid from '../../Components/BreadGrid';
 
 const HomePage = () => {
     return(
@@ -15,6 +16,7 @@ const HomePage = () => {
             <BakeryItems />
             <OrganicBread />
             <StoryRender />
+            <BreadGrid />
         </div>
     )
 }
