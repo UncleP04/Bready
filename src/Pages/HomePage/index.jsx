@@ -6,6 +6,8 @@ import Introduction from '../../Components/Introduction';
 import OrganicBread from '../../Components/OrganicBread';
 import StoryRender from '../../Components/StoryRender';
 import BreadGrid from '../../Components/BreadGrid';
+import Preservation from '../../Components/Preservation';
+
 
 const HomePage = () => {
     return(
@@ -17,6 +19,7 @@ const HomePage = () => {
             <OrganicBread />
             <StoryRender />
             <BreadGrid />
+            <Preservation />
         </div>
     )
 }

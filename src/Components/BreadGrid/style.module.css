@@ -29,11 +29,9 @@
     width: 100%;
     height: 100%;
     transition: .5s;
+    position: relative;
+    transition: .5s;
 }
-
-/*.breadGrid span:hover{*/
-/*    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));*/
-/*}*/
 
 .breadGrid span:nth-child(1){
     background-image: url(../../Image/pexels-cats-coming-1581715.jpg);
@@ -57,19 +55,74 @@
     background-size: cover;
 }
 
+.breadGrid span i{
+    font-size: 25px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+
+.breadGrid span:hover i{
+    color: white;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*Hover on grid-span*/
 
-.breadGrid span:hover:nth-child(1){
+.breadGrid .oneSpan:hover{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(../../Image/pexels-cats-coming-1581715.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.breadGrid span:hover:nth-child(2){
+.breadGrid .twoSpan:hover{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(../../Image/story.jpg);
-
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.breadGrid span:hover:nth-child(3){
+.breadGrid .threeSpan:hover{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(../../Image/weat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.breadGrid span:hover:nth-child(4){
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(../../Image/organic.jpg);
+.breadGrid .fourSpan:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(../../Image/organic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 550px) {
+    .breadGrid{
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .breadGrid{
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+    }
+
+    .breadGrid span{
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+    .breadGrid{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: auto;
+    }
+    .breadGrid span{
+        height: 300px;
+    }
 }
