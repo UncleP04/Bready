@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+:root{
+    --Text: 'Roboto', sans-serif;
+    --Header: 'Alkatra', cursive;
+    --Color: #25be5b;
+    --Background: #32814e;
+    --whiteBg: #fff;
+}
+
+.locationBox{
+    width: 100%;
+    height: auto;
+}
+
+.location{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.87), rgba(19, 24, 21, 0.77)), url("../../Image/location.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationFeatures{
+    width: 70%;
+    height: 500px;
+    background: var(--whiteBg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.locationFeatures span:first-child{
+    padding: 10%;
+}
+
+.locationFeatures span:first-child h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--Background);
+    margin-bottom: 10%;
+    font-size: 3em;
+    font-family: var(--Header);
+}
+
+.locationFeatures span:first-child p{
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.locationFeatures span:last-child{
+    background: var(--Background);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationFeatures span:last-child ul li{
+   color: var(--whiteBg);
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 20px 0;
+    list-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .locationBox{
+        height: auto;
+    }
+
+    .location{
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .locationFeatures{
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+    }
+
+    .locationFeatures span:first-child h1{
+        font-size: 2em;
+    }
+
+
+    .locationFeatures span:last-child ul li{
+        padding: 10px 0;
+    }
+
+    .locationFeatures span:last-child{
+        background: rgba(13, 31, 20, 0.98);
+    }
+}

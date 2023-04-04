@@ -7,6 +7,8 @@ import OrganicBread from '../../Components/OrganicBread';
 import StoryRender from '../../Components/StoryRender';
 import BreadGrid from '../../Components/BreadGrid';
 import Preservation from '../../Components/Preservation';
+import Location from '../../Components/Location';
+import Footer from '../../Components/Footer';
 
 
 const HomePage = () => {
@@ -20,6 +22,8 @@ const HomePage = () => {
             <StoryRender />
             <BreadGrid />
             <Preservation />
+            <Location />
+            <Footer />
         </div>
     )
 }
